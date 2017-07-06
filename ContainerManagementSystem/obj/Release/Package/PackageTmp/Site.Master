@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ContainerManagementSystem.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+   
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ </head>
+<body>
+    <form runat="server">
+       
+        
+
+        <div style="width:1000px;">
+  <div style="width:300px; float:left; height: 51px;">
+      
+            <asp:Button class="button button1" ID="Button1" runat="server" Text="Logout" Height="47px" OnClick="Button1_Click" /></div>
+
+           
+  <div style="width:578px; float:right;">
+    
+          
+               
+                    <ul class="w3-ul">
+                        <li><a class="w3-hover-red" runat="server" href="~/home.aspx">Home</a></li>                       
+                        <li><a class="w3-hover-blue" runat="server" href="~/HandleDeliery.aspx">Handle Deliveries</a></li>
+                        <li><a class="w3-hover-cyan" runat="server" href="~/DeliveryRates.aspx">Delivery Rates</a></li>
+                        <li><a class="w3-hover-green" runat="server" href="~/About">About</a></li>
+                    </ul>
+                
+            
+  </div>
+            <br>
+            <br>
+            <br>
+</div>
+        <div >
+           
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+           
+            
+        </div>
+
+    </form>
+</body>
+</html>
+<style>
+    .button1 {padding: 10px 24px;
+                 background-color: #41708c; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    
+    .center {
+    margin: auto;
+    width: 5%;
+    border: 3px solid #55A3BD;
+    padding: 6px;
+}
+    
+li {
+    float: left;
+}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+</style>
